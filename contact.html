@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            align-items: center;
+            font-family: 'Poppins',sans-serif;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        }
+        .menu{
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #4b4f58;		  
+        } 
+        .menu a:hover{
+			color: #c08720;
+			border-bottom: 1px solid #c08720;
+		}
+        .container{
+            margin-top: 70px;
+            padding-left: 10%;
+            padding-right: 10%;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+            padding-bottom: 140px;
+            background-color: white;
+            height: 40%;
+        }
+        h1{
+            color: #c08720;   
+            font-size: 35px;  
+            font-family: 'Playfair Display',serif;
+        }
+        .p{
+            width: 100%;
+            color: #4b4f58;
+            font-size: 18px;
+        }
+        label{
+         color: #3f4b5b;
+        
+        }
+        input{
+            border: 1px solid #c08720;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .btn{
+			margin-top: 30px;
+            width: 10%;
+            font-family: 'Playfair Display',serif;
+			cursor: pointer;
+			font-size: 17px;
+            background-color:  #c08720;
+			color:white;
+			border: 1px solid #c08720;
+            box-shadow: 0 1px 1px #dd9933;
+			padding: 8px;
+            
+		}
+		.btn:hover{
+			border: 1px solid #c08720;
+			color:black;
+		}
+        span{
+            color: #c08720;
+        }
+        .head{
+            font-size: 40px;
+            font-weight: 600;
+            color: #c08720;
+            text-align: center;
+           
+        }
+        .lastdemo{
+			background-image: url(burhanpur_images/img03-free-img.jpg);
+			background-size: cover;
+			width: 100%;
+			height: 900px;
+			position: relative;
+		}
+		.lastdemo1{
+			background-color: black;
+			width: 100%;
+			height: 900px;
+			opacity: 0.6;
+		}
+		.digitalhead{
+			color: #c08720 ;
+			position: absolute;
+			top: 16%;
+			left: 40%;
+			font-size: 23px;
+		}
+		.lastdemo img{
+			position: absolute;
+			top: 15%;
+			left: 33%;
+		}
+		.lastdemo p{
+			color: white;
+			position: absolute;
+			top: 69%;
+			left: 30%;
+			font-size: 18px;
+		}
+		.lastdemo pre{
+			position: absolute;
+			top: 80%;
+			left: 35%;
+			color: white;
+			font-size: 20px;
+			color: #c08720 ;
+		}
+		.footer1{
+        	background-color: #3a3a3a;
+        	width: 100%;
+        	height: 80px;
+        	color:#c08720  ;
+        	font-size: 19px;
+        	text-align: center;
+        }
+        footer{
+        	padding: 23px;
+        }
+        
+    </style>
+</head>
+<body style="background-color: #EBEDEF ;">
+    <nav>
+        <div class="logo">
+            <img src="burhanpur_images/bpl.png"width="200px">
+        </div>
+        <div class="menu">
+            <a href ="home.html">Home</a >
+            <a href ="Explore Burhanpur.html">Explore Burhanpur^</a>
+            <a href ="blogs.html">Blogs^</a>
+            <a href ="listbussines.html">List Business</a>
+            <a href ="about.html">About</a>
+            <a href ="job.html">Jobs^</a>
+            <a href ="contact.html">Contact</a>
+            <a href="#"><img style="opacity: 0.7;" src="burhanpur_images/logo-facebook-50 (1).png"width="20px"></a>
+			<a href="#"><img style="opacity: 0.7;" src="burhanpur_images/logo-instagram-24.png"width="20px"></a>
+			<a href="#"><img style="opacity: 0.7;" src="burhanpur_images/logo-twitter-30.png"width="20px"></a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="pt-5">Contact</h1>
+        <p class="p">We value our readers to give them the best experience. This form is only for your questions and feedback regarding Burhanpurdiary.</p>
+        <div class="row">
+            <label>Name <span>*</span></label><br>
+            <div class="col-sm-6">
+                <input type="text" style="width: 100%;">
+                <p class="pt-1" style="font-size: 13px;">First</p>
+            </div>
+            <div class="col-sm-6">
+                <input type="text" style="width: 100%;">
+                <p class="pt-1" style="font-size: 13px;">Last</p>
+            </div>
+            <label>Email <span>*</span></label><br>
+            <input class="ms-2" type="text" style="width: 98%;"> 
+            <label class="pt-3">Subject<span>*</span></label>
+            <input class="ms-2" type="text" style="width: 98%;"> 
+            <label class="pt-3">Message<span>*</span></label> 
+            <textarea class="ms-2 mt-2 p-5 rounded-1" type="text" style="width: 98%;  border: 1px solid #c08720;"></textarea>   
+            <button class="btn ms-2">Submit</button>
+            <p class="head">Contact us</p>
+            <div class="row ms-5 ps-5" style="cursor: pointer;">
+                <div class="col-sm-4">
+                    <img class="pt-5" src="burhanpur_images/message-30.png"width="25%">
+                </div>
+                <div class="col-sm-4">
+                    <img class="pt-5" src="burhanpur_images/location-50.png"width="25%">
+                </div>
+                <div class="col-sm-4">
+                    <img class="pt-5" src="burhanpur_images/smartphone-50.png"width="25%">
+                </div><br>
+                <div class="col-sm-4">
+                    <img class="pt-5" src="burhanpur_images/instagram-24.png"width="25%">
+                </div>
+                <div class="col-sm-4">
+                    <img class="pt-5" src="burhanpur_images/facebook-50 (1).png"width="25%">
+                </div>
+                <div class="col-sm-4">
+                    <img class="pt-5" src="burhanpur_images/icons8-twitter-50.png"width="25%px">
+                </div>
+           </div>
+        </div>  
+    </div>
+     <!-------footer---->
+     <div class="lastdemo mt-5">
+        <div class="lastdemo1">
+        </div>
+        <h3 class="digitalhead">Digital Guide of Burhanpur</h3>
+        <img src="burhanpur_images/favicon-transperant.webp"width="35%"height="500px">
+        <p>Welcome to Burhanpur Diary. We are a local digital guide for you. Burhanpurdiary<br> will give a platform for helping for jobs in the local area for employees and<br> employers too. We are trying to connect the digital presence of our district.</p>
+        <pre>Burhanpur, Madhya Pradesh, 450331, INDIA</pre>
+    </div>
+    <!---footer--->
+    <div class="footer1">
+        <footer>Copyright © 2023 BurhanpurDiary</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
